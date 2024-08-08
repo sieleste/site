@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="afterWin"></div>
+  <form id='form'>
+  <h2 id="nameGame">Крестики Нолики</h2>
+  <h2 id='move'>Ход: X</h2>
+  <p id="winner"></p>
+  <div id="body">
+    <div id="gameField">
+      <div class="flex">
+        <div class="sideField">
+          <div id="crosses" class="side">Крестики</div>
+          <p class="score" id="X-Score">0</p>
+        </div>
+        <div class='tableField'></div>
+          <table id="table">
+            <tr>
+              <th class="blockField"><p id="aa"></p></th>
+              <th class="blockField"><p id="bb"></p></th>
+              <th class="blockField"><p id="cc"></p></th>
+            </tr>
+            <tr>
+              <th class="blockField"><p id="dd"></p></th>
+              <th class="blockField"><p id="ee"></p></th>
+              <th class="blockField"><p id="ff"></p></th>
+            </tr>
+            <tr>
+              <th class="blockField"><p id="gg"></p></th>
+              <th class="blockField"><p id="hh"></p></th>
+              <th class="blockField"><p id="ii"></p></th>
+            </tr>
+          </table>
+
+        <div class="sideField">
+          <div id="zeroes" class="side">Нолики</div>
+          <p class="score" id="O-Score">0</p>
+        </div>
+      </div>  
+    </div>
+  </div>
+  <input type="button" id="resetBtn" value="Сбросить">
+  </form>
+
+  <script src="javaScript.js"></script>
+</body>
+</html>
